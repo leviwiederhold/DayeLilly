@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daye Lily Beauty Bar &amp; Boutique | Mount Orab, OH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae8e4",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#e8e0ba",
+                        "inverse-on-surface": "#f2f0ed",
+                        "secondary-fixed": "#eae3bc",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#f3dfcb",
+                        "tertiary": "#6a5c4c",
+                        "on-secondary-fixed-variant": "#4b472b",
+                        "secondary": "#635f40",
+                        "surface-tint": "#6d5a5a",
+                        "tertiary-fixed-dim": "#d6c4b0",
+                        "secondary-fixed-dim": "#cec7a2",
+                        "on-primary-container": "#725e5e",
+                        "primary-container": "#f4dada",
+                        "surface-bright": "#fbf9f5",
+                        "surface-variant": "#e4e2de",
+                        "on-secondary-fixed": "#1f1c04",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c1a",
+                        "on-primary-fixed-variant": "#544243",
+                        "surface-dim": "#dbdad6",
+                        "surface-container-highest": "#e4e2de",
+                        "primary": "#6d5a5a",
+                        "primary-fixed-dim": "#dac1c1",
+                        "on-tertiary-fixed-variant": "#514536",
+                        "surface-container": "#efeeea",
+                        "surface": "#fbf9f5",
+                        "inverse-primary": "#dac1c1",
+                        "inverse-surface": "#30312e",
+                        "on-surface-variant": "#4e4444",
+                        "on-tertiary-container": "#6e6151",
+                        "on-background": "#1b1c1a",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f5f3ef",
+                        "on-tertiary-fixed": "#231a0e",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#f0ddc9",
+                        "on-secondary-container": "#686344",
+                        "outline": "#807474",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#f7dcdc",
+                        "on-primary-fixed": "#261818",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#d2c3c3",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fbf9f5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .signature-gradient { background: linear-gradient(45deg, #6d5a5a, #f4dada); }
+        .signature-gradient:hover { background: linear-gradient(45deg, #f4dada, #6d5a5a); }
+        .no-line-shadow { box-shadow: 0 12px 32px -4px rgba(27, 28, 26, 0.06); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-sans selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-serif italic text-rose-950 dark:text-rose-100 tracking-tight" href="/">Daye Lily</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-rose-900 dark:text-rose-300 border-b-2 border-rose-200 dark:border-rose-800 pb-1 font-medium transition-colors duration-300" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 dark:hover:text-rose-200 transition-colors duration-300" href="#">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 dark:hover:text-rose-200 transition-colors duration-300" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 dark:hover:text-rose-200 transition-colors duration-300" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden sm:inline text-sm font-semibold text-stone-600">(937) 444-4544</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold transition-transform scale-95 duration-200 ease-in-out hover:scale-100 signature-gradient">Book Now</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Luxurious and warm beauty salon interior with soft lighting, velvet chairs, and elegant floral arrangements in a boutique setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPjcFeM1IZxELuL7N2eThUs8kvHzK-lUSB04IVcXvSD4x6kh8Cbt2733i7_o7LTzoiBPFXJzlKCDEW7pZeAg5VzM3Cvo7S1IlhIY3TKzvzyQ9ZnTY6zT2uPEXmQrkw5O7QnGfOusLG627Q9DDdCQhTI5UBXD9El5ZIZn04gJbWXK5JVgsIrs36tiaEGgGFZDSRdbDkr5JNf6PwAm3v5Boe6DbW18AV5ZyP3Z5RuyoBCAEhB_T4YUgCK6iJVx0_8uVzItm1FwXK8t4"/>
+<div class="absolute inset-0 bg-stone-950/30"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl bg-surface/85 backdrop-blur-md p-8 md:p-12 rounded-xl no-line-shadow">
+<h1 class="font-serif text-5xl md:text-6xl text-on-surface leading-tight mb-6">Mount Orab’s Go-To Beauty Bar &amp; Boutique</h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-8 leading-relaxed font-body">Nails, lashes, facials, tanning &amp; more — all in one relaxing space designed for your comfort and rejuvenation.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg signature-gradient shadow-lg">Book Appointment</button>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2">
+<span class="material-symbols-outlined">call</span>
+                        (937) 444-4544
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
+<div class="max-w-xl">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Our Reputation</span>
+<h2 class="font-serif text-4xl text-on-surface leading-tight">Why Clients Love Daye Lily</h2>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low p-6 rounded-xl">
+<div class="flex flex-col">
+<span class="text-3xl font-serif font-bold text-primary">4.6</span>
+<div class="flex text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+</div>
+</div>
+<span class="text-on-surface-variant font-medium">Average Google Rating</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">spa</span>
+<h3 class="font-serif text-xl mb-3">Full Service Range</h3>
+<p class="text-on-surface-variant">From head to toe, we offer every beauty treatment you need in one convenient, luxurious location.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">favorite</span>
+<h3 class="font-serif text-xl mb-3">Welcoming Vibe</h3>
+<p class="text-on-surface-variant">Our space is designed to feel like home—warm, inviting, and dedicated to your relaxation.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">verified_user</span>
+<h3 class="font-serif text-xl mb-3">Expert Professionals</h3>
+<p class="text-on-surface-variant">Our certified technicians are masters of their craft, ensuring safety and stunning results every time.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-serif text-4xl mb-4">Curated Beauty Services</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto font-body">Tailored treatments designed to enhance your natural beauty and boost your confidence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[280px]">
+<!-- Nails -->
+<div class="md:col-span-8 relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Close-up of professional manicure with elegant nude polish and gold leaf accents on a marble background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBusmQbUt_MjziHZ_uWfFJ2ucxj727LzEmm-BLy5q_LWmPnXVpKIUOQ8pDxz-lVzhgqoLyJg-CsZuK6YePUq5Ppl9-onK5T0efJ9abp5YXcAseY_4sKgDOyqXbAmMaOuPUgOXAvlOOxESMp2QA71tYfbThOl06Dq6GyXgGljUfOizpGQZmkI5HMKtLNEPD2QnrmvpM2FNO7CqLfjhDEQJjVSCG5kQu_vbdWTpB0K-TjLfY7ynYWWUKzA6pxQMl3gvBw8UO4lmi5TMw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-serif text-2xl mb-2">Nails</h3>
+<p class="text-sm opacity-90 max-w-md">Signature manicures, long-lasting gel extensions, and creative nail art that speaks volumes.</p>
+</div>
+</div>
+<!-- Lashes -->
+<div class="md:col-span-4 relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Stunning close-up of a woman's eye featuring lush and voluminous eyelash extensions in a soft-focus beauty setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQec19KZo1AG03MwAwzOAZkFKt4KBvOiMWNzKZ04YyczAkvtokPfW_jQSlbTJZOKGV6anmHW2lW4urN-mMYJsy48C6KJsMRJiQ3PgV7M91oap7_qHr9t3auwnbDCfMbGpluMARmN_DhPaxiOWL_6M7GYIbR6AeGQ9Q9OFbwa7Jw8FRbyjcGsximiy6bJZ6I6pDohIcmDjgqU9xjlQSzaDcGEs5HEXIBD3GfRpHDjJgEAGYGETVR9fZ961Uo2cUFOqNvBJ1Y_kqevI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-serif text-2xl mb-2">Lashes</h3>
+<p class="text-sm opacity-90">Custom volumes and lifts to brighten your gaze.</p>
+</div>
+</div>
+<!-- Facials -->
+<div class="md:col-span-4 relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Relaxing facial treatment being applied with a soft brush, emphasizing glowing skin and a serene spa atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMiOreL9sZTIj4Z114foGtoV35mWDPB-rIwFbKPhjke20a3KJ6xmoAX6AkRgQhLrMiJIiDOTwHRY8TkvT__FMKHBvKrWawaansH1ddU__jKlQeeyS5dL3oNY20GrT5ME5zRRAW_E4FBvRz1QcGXFoPUi6FmSUlS8bXxTp3_Z6eqgwGq2hQDhV1V5TOsCqu6l0IDN6RA2QCONb40lYr3vcHCjULZSUlE00ntTsZST9RcZAFGfZ9bYleFTsRhLtVToVTQIQdpz_EUBQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-serif text-2xl mb-2">Facials</h3>
+<p class="text-sm opacity-90">Rejuvenating skin rituals for every type.</p>
+</div>
+</div>
+<!-- Others -->
+<div class="md:col-span-4 relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Warm indoor tanning booth or specialized waxing station with clean, modern equipment and amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDthflFFzud_ahquxrcDqTH7Js1J1qdK4maYpIhr7EBHZ73ffZz9ew0ulZ_M98kqNnyNloxrG-6x-otRSPCPUndxeYkfN3vFHUBTJrCysch-9P3784AI5UGH0RriCPWP91IuITq7gbbc4szgfTBwXh6GaV5W8FnGnwv3IAvKzHIPLgq1g35836sSiOOjLH1iHH2alloKfhbe0B6owV621DSPrMfCv30_vD__fFqj9F86L3Xxhyz7OHqJczxrsFWkG7DbVF3fik5sMs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-serif text-2xl mb-2">Waxing &amp; Tanning</h3>
+<p class="text-sm opacity-90">Precision hair removal and sun-kissed glows.</p>
+</div>
+</div>
+<div class="md:col-span-4 relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Detailed view of perfectly shaped eyebrows and a subtle, high-end ear piercing in a clean boutique studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWzSKgi4YJrCJgKNZf8v9CApDJ8G7SLOxfy8WZwyz-VVLFVBHaj1azCCEVUIL0AMc4CcOnUUDKCqr6T3nvisOuqtCiZJIRPL9AXcI8KNgZfzkKS5Dq_YeMHvzpQydewm28-i4wp0IXgOq5n6R35W-zaumtpALX065rXeT0zSOSRkmMl3xmW1xADRti6a8XAkhSGYomvMRS0nkHiKXzXYOz8DrJPUF3D6sv_b_p-47dJRbTc4p8OJsqh03hSHvk4YppsZBR01-8Dd4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-serif text-2xl mb-2">Brows &amp; Piercing</h3>
+<p class="text-sm opacity-90">Defining features with expert precision.</p>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold signature-gradient">View Services</button>
+</div>
+</div>
+</section>
+<!-- Unique Experience (The Collective) -->
+<section class="py-24 bg-surface-container-lowest overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 relative">
+<div class="grid grid-cols-2 gap-4">
+<img class="rounded-2xl mt-8" data-alt="High-end boutique clothing display with trendy dresses and accessories on a minimal wooden rack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOGFBhGen_KvIfQU3XUu5txnO4qo1NTZvpIY1uejzdvRmjxy4OZayZOSJkJJT_41rbojI33aDVEP-lImhrUaLwubqGV18-F2kDHVZ4oIkmGh6G_81IteGw8JE9QILpzej0xQqPTq-v8nOvF4pr8B9n4X5JcsBQF88NUiBVxOY9DjoTugTwfgykJKhY4OKhfi6VE9wjhnamb5YnEK6EHUqPNs_topK8gjRk-rVOab8WUwxecfRxmmH_fPqLdV4fWrOm-DQmD6jC4vU"/>
+<img class="rounded-2xl -mt-8" data-alt="Stylish modern hair salon interior with elegant chairs and sleek mirrors, showcasing a premium hair styling environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCERwO9svBlPDVN0vRjMOgKUJ_lv_rxD35d-HZIvbiNGVcrS1HzricUW0TtZjAh1dU2cbFJLaSxzLWpP-ybKt2yo_Ozs7sTNRk3GW1iaOvn71FZdGx9rgsizzFT6gCoKy4xw0oeJxkVJWR9PAOlIr5DQvk5wUW9WSqPiTWzEwS_-Wnp43y8ncwIp57wKmHm7NsA0KPoASkcYLuLSVySu3Yxs8dx4X2DHEOoZNQ_W6FG0cnmF19WZ6MSQ2yNUUE5sJzwThV89uLMFw"/>
+</div>
+<!-- Floral Motif overlay -->
+<div class="absolute -z-10 -bottom-10 -left-10 w-48 h-48 opacity-10 text-secondary">
+<span class="material-symbols-outlined text-[200px]">filter_vintage</span>
+</div>
+</div>
+<div class="lg:w-1/2">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">The Collective</span>
+<h2 class="font-serif text-4xl text-on-surface leading-tight mb-6">More Than a Salon — A Full Beauty Experience</h2>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">Daye Lily is proud to host a curated collective of local boutiques and experts, making us your ultimate lifestyle destination in Mount Orab.</p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">content_cut</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Hair by B.Taylor Salon</h4>
+<p class="text-on-surface-variant">Expert coloring, cutting, and styling to complete your beauty transformation.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">shopping_bag</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Empowered Beauty by Loryn</h4>
+<p class="text-on-surface-variant">Curated boutique clothing for women who want to feel as good as they look.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary">child_care</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">MyBella Boutique</h4>
+<p class="text-on-surface-variant">Adorably stylish boutique wear and accessories for the little ones in your life.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-serif text-4xl text-center mb-16">Stories from Our Community</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-8 rounded-2xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-8">format_quote</span>
+<p class="text-on-surface mb-6 italic">"Absolutely love the atmosphere here! I came in for a facial and ended up finding the cutest dress at the boutique. It’s my new favorite one-stop shop."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-stone-300"></div>
+<div>
+<p class="font-bold text-sm">Sarah Jenkins</p>
+<p class="text-xs text-on-surface-variant">Local Resident</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-8">format_quote</span>
+<p class="text-on-surface mb-6 italic">"The best lash extensions I've ever had. The attention to detail is unmatched, and the space is so peaceful. I look forward to every appointment!"</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-stone-300"></div>
+<div>
+<p class="font-bold text-sm">Amanda M.</p>
+<p class="text-xs text-on-surface-variant">Lash Client</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-8">format_quote</span>
+<p class="text-on-surface mb-6 italic">"B.Taylor did an amazing job with my hair, and I love that I can get my nails done right after. Mount Orab really needed a high-end spot like this!"</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-stone-300"></div>
+<div>
+<p class="font-bold text-sm">Jessica P.</p>
+<p class="text-xs text-on-surface-variant">Regular Customer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Local Section -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-serif text-4xl mb-6">Proudly Serving Mount Orab, Ohio</h2>
+<p class="text-lg text-on-surface-variant mb-8 font-body">Located in the heart of our community, we are dedicated to providing a luxury beauty experience right in your backyard.</p>
+<div class="bg-surface-container-lowest p-6 rounded-xl no-line-shadow mb-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-bold">231 Apple St, Mt Orab, OH 45154</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-on-surface-variant">Mon - Sat: 9:00 AM - 7:00 PM</span>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-lg font-bold">Get Directions</button>
+</div>
+<div class="h-[400px] rounded-2xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover grayscale opacity-80" data-alt="Map view of Mount Orab, Ohio showing a serene suburban layout with green spaces and clean streets" data-location="Mt Orab, OH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjThap4WGqbMbZg-Qr3uP50NP1ubVgA4u4Xuo5ExaDobi_eTJKESDY8-9bkYg2_4Los6aies1xWz02lOuGU_PVSQsRULV0x7S0gpqsM0-SHkn0gezc_DrQ8t5_BI9w_JyelU_RTXfcZ9IUtU7JgvKVFEsVbP1d5T_O5wiIXVsRea5DXfqmK7aQoKxVyVOY9sC8c0X5NV8l1ayfUZlAl0XLZMFm6fEDILJeqVNdluQDS88zUKvT3Ot-aPHyN17NRpiWGFOeXZtAU7E"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center justify-between mb-12">
+<h2 class="font-serif text-3xl">Follow Our Journey</h2>
+<a class="text-primary font-bold flex items-center gap-2" href="#">@dayelilybeauty <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<img class="aspect-square object-cover rounded-lg" data-alt="Instagram shot of artistic nail design with pastel colors and floral decals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwiW0EgKNarDwRsmWfmfr6dwwyBFSYDlreBo7e8cKqAWUOKSEbUxTvBNtPQ_hZp29Qrk__yBvsf72Ac1ZYH3GWDcI6Mny6nK070GZrml-V8T4rq2DDSgjNXqGvNHti5WM-O8UBeRKtarJs00lR-Gy-dtLiqtGMYqLqodD-BVaZ22LHUyy6TAGxhq9Udu1-YI7ZY-JTpRoIUBKY28nYugweKkk75wHCumYPmiRLktlLUpQ20Jdhs0HzJz5b0mYNVcdUedbNnkvvR9I"/>
+<img class="aspect-square object-cover rounded-lg" data-alt="Client photo of fresh lash extensions on a sunny day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_QCq87uccf2H0XwE62hsUrek257WR6MvO7LHnODznFpxAYth-IXDWKDdwj5EEvuEEa9YC1qi7wFCmgJu5yNDj_QKYQQJBI2mOXy0Yh8jmrKyYaeOYmXZAEjVbpDHxdmWZ6TStGthsYoIUsGVwr2oolYYeDErLQyVYgxdBBnHNZfnc-YcRiXR0cA-eE1epkzOoEZKqDyRtMRWkV9Zl8M-nKzUjPx7KTwXKOdFzS_lrH8VozKq5bvxpY60Jq979EZAenG0nbDdSuF0"/>
+<img class="aspect-square object-cover rounded-lg" data-alt="Boutique display showing a new seasonal collection of summer dresses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBblC4LC5RiqsLUFUxws721e0fPRGcan_tkBBVybGWfRTyIOrxfP18GJGRWGobtfC77zlAN2ItyhwZCglE5-GcyaMWFc9IE4l_QX3hO2ZJZS_skVJzTeZW1-CBU0q9f_EDVKbdM8IyeUmY8j5H6wZOVoFRNZkNB6t6L9PSH3rHlDwmeHREmUqekykT8LSelmDQfr5KBz_uYMHZ3gT5I0aVl--PKFOyLcZoWYmVsBOcWNbD0zl2t-N8Q3eKZkyy5yAzSaFEW5jb8yuk"/>
+<img class="aspect-square object-cover rounded-lg" data-alt="Close up of a professional facial application with soothing steam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD4aI88cOtthY8UBmjLTuEBnGsFYU9I23JA_4wtLEmWnpE1wv_jtXYYXv7qOpAphAM6pV4QvlTzRB11HoG6rgwYu0QeR74cc3wPEef7UCc1IGSiT0FUaL3WE8CS1HCh2CqU7j_57wUUEudJWmJ1yyoGh6jc-tjTT3tum1pOrAfnZjPtcqm9dOdCTiDerleymkfjSPz73qHK4Yn8ppoe4WBgeJysDXxsKfeuafAI3i3SBk1gNR8hhjsWz3Dj2Mb7Hpx9BwmKGXXeKk"/>
+<img class="aspect-square object-cover rounded-lg" data-alt="Elegant boutique mirror selfie showcasing stylish hair and fashion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnwp8hiwgqb2dRUnsvbfnVVpxu6gtbGscvlyDVVYBsnfrPrGPykIHhFX5tgIJajn2IfhDm3to6LRH4PnQdFJbFNlZUHXw1Unqcq7le9vHuJWNDz9DQ2AZJREqsVlib2gdxVaqvEaA96gSJzMW2lWrftQ7BQJNDqp2oWn0IwsF7ONWw6iOUok2Vx99nMXsyZ9S-vWmxWbqpAVoTSpCqxlkN3Ms53r14eilbW_209YMcMQYX6MlVTiHqdA4YLn2rdA8dcTcM5e75xHc"/>
+<img class="aspect-square object-cover rounded-lg" data-alt="Brightly lit vanity table with high-end beauty products and flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKl9dVGJMshyD60gIrup7HE6vuO0OTo_LKNRTGO9oxkyakTX3AjdQYbwlVFA3pGryeG3B7grVX9BMg1t0QpRjssjIVyFNUx2r1QJEQtaw5d3kvSqgxh7vitF0SXV23w8BJJqLYPwcr6Z1rOsc1VhMUq6OFE-AHPBueA9XXYPuAnBC3GTA26fFdsB6f0p27Q3Usd-EN3i-Ze3-vTdrhHgEClOPyjnyREffCbe3H_pNEqfbInOjXK2qbbD5rRJ0pWNQm3x0ISL0J_Z4"/>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="font-serif text-5xl mb-6">Book Your Appointment Today</h2>
+<p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto font-body">Escape the everyday and indulge in a beauty experience that leaves you feeling empowered and refreshed.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-on-primary text-primary px-10 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-surface-container-lowest transition-colors">Book Now</button>
+<button class="border-2 border-on-primary text-on-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors">Call (937) 444-4544</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 text-rose-900 dark:text-rose-200 full-width pt-12 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+<div class="space-y-4">
+<h2 class="text-xl font-serif text-rose-950 dark:text-rose-100">Daye Lily</h2>
+<p class="text-stone-500 dark:text-stone-400 font-body">Mount Orab's premier destination for beauty, fashion, and self-care.</p>
+</div>
+<div>
+<h4 class="font-bold text-rose-900 dark:text-rose-300 mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4 opacity-80 hover:opacity-100" href="#">Services</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4 opacity-80 hover:opacity-100" href="#">Gallery</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4 opacity-80 hover:opacity-100" href="#">Our Story</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4 opacity-80 hover:opacity-100" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-rose-900 dark:text-rose-300 mb-4">Visit Us</h4>
+<ul class="space-y-2">
+<li class="text-stone-500 dark:text-stone-400">231 Apple St, Mt Orab, OH</li>
+<li class="text-stone-500 dark:text-stone-400">(937) 444-4544</li>
+<li class="text-stone-500 dark:text-stone-400 mt-4"><a class="hover:underline decoration-rose-200 underline-offset-4 opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+<li class="text-stone-500 dark:text-stone-400"><a class="hover:underline decoration-rose-200 underline-offset-4 opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-rose-900 dark:text-rose-300 mb-4">Newsletter</h4>
+<p class="text-stone-500 dark:text-stone-400 mb-4">Stay updated on special events and boutique arrivals.</p>
+<div class="flex gap-2">
+<input class="bg-white/50 dark:bg-black/20 border-none rounded-lg p-2 w-full text-sm" placeholder="Your Email" type="email"/>
+<button class="bg-primary text-on-primary p-2 rounded-lg material-symbols-outlined">send</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-rose-200/20 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2024 Daye Lily Beauty Bar &amp; Boutique</p>
+</div>
+</footer>
+</body></html>
