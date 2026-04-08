@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Appointment | Daye Lily Beauty Bar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#e8e0ba",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#eae3bc",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#f3dfcb",
+                    "tertiary": "#6a5c4c",
+                    "on-secondary-fixed-variant": "#4b472b",
+                    "secondary": "#635f40",
+                    "surface-tint": "#6d5a5a",
+                    "tertiary-fixed-dim": "#d6c4b0",
+                    "secondary-fixed-dim": "#cec7a2",
+                    "on-primary-container": "#725e5e",
+                    "primary-container": "#f4dada",
+                    "surface-bright": "#fbf9f5",
+                    "surface-variant": "#e4e2de",
+                    "on-secondary-fixed": "#1f1c04",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1b1c1a",
+                    "on-primary-fixed-variant": "#544243",
+                    "surface-dim": "#dbdad6",
+                    "surface-container-highest": "#e4e2de",
+                    "primary": "#6d5a5a",
+                    "primary-fixed-dim": "#dac1c1",
+                    "on-tertiary-fixed-variant": "#514536",
+                    "surface-container": "#efeeea",
+                    "surface": "#fbf9f5",
+                    "inverse-primary": "#dac1c1",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#4e4444",
+                    "on-tertiary-container": "#6e6151",
+                    "on-background": "#1b1c1a",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f5f3ef",
+                    "on-tertiary-fixed": "#231a0e",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#f0ddc9",
+                    "on-secondary-container": "#686344",
+                    "outline": "#807474",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#f7dcdc",
+                    "on-primary-fixed": "#261818",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#d2c3c3",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#fbf9f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .signature-gradient {
+            background: linear-gradient(45deg, #6d5a5a, #f4dada);
+        }
+        .lily-logo-break {
+            transform: translateY(10px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Component -->
+<header class="bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md text-rose-900 dark:text-rose-200 docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-serif italic text-rose-950 dark:text-rose-100 tracking-tight lily-logo-break" href="/">
+                Daye Lily
+            </a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 dark:hover:text-rose-200 transition-colors duration-300" href="/services">Services</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 dark:hover:text-rose-200 transition-colors duration-300" href="/services">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 dark:hover:text-rose-200 transition-colors duration-300" href="/about">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 dark:hover:text-rose-200 transition-colors duration-300" href="/contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="hidden lg:block text-stone-600 font-medium">(937) 444-4544</span>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-xl font-semibold hover:scale-95 transition-all duration-200 signature-gradient inline-block" href="/book-now">Book Now</a>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-16 px-6 max-w-7xl mx-auto overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface mb-6 leading-tight">
+                        Reserve Your <br/><span class="italic text-primary">Luminous</span> Moment.
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                        Experience the art of personalized beauty. Whether you prefer the convenience of online scheduling or a personal touch via phone, we're ready to curate your visit.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="signature-gradient text-on-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity" href="#online">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+                            Book Online
+                        </a>
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-secondary-fixed transition-colors" href="tel:9374444544">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                            (937) 444-4544
+                        </a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative z-10">
+<img alt="Interior of boutique salon" class="w-full h-full object-cover" data-alt="Luxurious and bright beauty salon interior with soft cream walls, warm wooden accents, and a large marble counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXwbBMVlx9pUfPed84fDXjsvFx379EIDZwMvOYYQ5JVWnmCoww068xg3yWDdISs9KH7HVB8ywJ1VTNTVosWDa2croGj0_-oSv_gSsseRfh3pfPhK7eszkNavzAorh9md0_aNqbkp1BtlCgZt5T54i7XabUfvgwQqk-3FXBlpoxe4cYYM3wdUheVKjZQiuLgzV261su7Cfb_hJoAXyr8Q-KaM5sGvTibIrt2oPm0-weilYcQOC9c_WOPkhC8WpqCq2H4Vdg5P0-uDE"/>
+</div>
+<!-- Floral Motif Accent -->
+<div class="absolute -bottom-8 -right-8 w-48 h-48 text-secondary opacity-20 z-0 rotate-12">
+<span class="material-symbols-outlined text-[12rem]" data-icon="local_florist">local_florist</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Options Grid -->
+<section class="bg-surface-container-low py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl md:text-4xl text-on-surface mb-4">How would you like to book?</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Option 1: Online -->
+<div class="bg-surface-container-lowest p-10 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow group" id="online">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="devices">devices</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Seamless Online Booking</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            View our full menu of services, check provider availability in real-time, and manage your appointments 24/7.
+                        </p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span>Select your favorite specialist</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span>Get instant email confirmation</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span>Easy rescheduling tools</span>
+</div>
+</div>
+<button class="w-full py-4 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-all">
+                            Select Service &amp; Time
+                        </button>
+</div>
+<!-- Option 2: Phone -->
+<div class="bg-surface-container-lowest p-10 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="support_agent">support_agent</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Personal Concierge</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            Have questions or need help bundling services? Our boutique coordinators are here to assist you during business hours.
+                        </p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span>Consultation for custom packages</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span>Group or bridal party inquiries</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span>Last-minute availability checks</span>
+</div>
+</div>
+<a class="w-full py-4 bg-secondary text-on-secondary rounded-xl font-bold flex items-center justify-center gap-3 hover:opacity-90 transition-opacity" href="tel:9374444544">
+                            Call (937) 444-4544
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Categories Bento -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<h2 class="font-headline text-3xl md:text-4xl text-on-surface mb-12">Popular Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px] md:h-[500px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container rounded-[1.5rem] overflow-hidden relative group">
+<img alt="Hair styling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of stylist hands working on elegant hair styling with warm backlighting in a high-end salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQv-REx1IY1YKVpGWjxh6XJN1RGEr7En6jUby3D1ApFKcC61cOb_6m-70sajChmTNd2gFVjfNomfItlwMY-kSfS2dX5q3NqHDLgjXSQWK8jMEUHLrQ8878LUA7TtLTEuhuts1XmVaws3jwbHY0iVvaq8yO5I8bw05xiP9Oi8TDC1-VX6imnHsoY5pqqAyXb7rHr3umjdtoI_jdd1noiGTvTvTeVfqCQA0JvsbPyQorJxdh6E7-b26TNq1gJszvUdu0DkZgiRbJeXE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+<span class="label-md uppercase tracking-widest text-primary-container mb-2">Signature</span>
+<h3 class="font-headline text-2xl">Luxe Color &amp; Styling</h3>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 bg-surface-container rounded-[1.5rem] overflow-hidden relative group">
+<img alt="Skincare treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Soft focused shot of premium skincare products and a fresh lily flower on a textured linen background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCldsj_oBxu8TCI4JmjYYBvvcqwq0QbJRkMzBHvYjJY0UbnyLO2dYRjwzkZF2_7_AC_Hanx1Cw6ZIFdOzschNW4FOfeju4jtGer18bOKcUBsV7jvIOgEDlo5QmMSiVXKlVT4sVjZgAM1JQRzF6puUGMC0USSuTheWDa3Bjvpf7iF-zEY2o-DmTE5f4OztqCQSl__NSzXYU7moofKpviElTKBBfV9oTnSmttwCCa1mLHEJ5potA_kjCmuLVPSLeauwX_a8t3PITCNwI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline text-xl">Rejuvenating Facials</h3>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 bg-surface-container rounded-[1.5rem] overflow-hidden relative group">
+<img alt="Lash lift" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro photo of beautiful eye with perfectly lifted and tinted eyelashes in soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Vz4-E4NDoHz7rjZMZFtlTAG-fD0pXvemAmEP7kr4i0LTIHyrb_yZl6fEFEcl2xL13zUvznI4vTj6yQhWAu_lACz6j8DGdTEKbc6l7rCgsb9mT_IttOu53uFlZ-FpNporRY4UxVS_4NnYWufrik3MlO65LKuNWTGf_3gCF3Jl6NBrosKb9Y470UP3O2KLdi5RPIbD9KXUyQCtBiPufcQH4aqu3zliuq4ihNhqot7YLLPr7fSAP4X4PtIUZXwWBFcbaAB_EQOKcfE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline text-xl">Lash &amp; Brow</h3>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 bg-surface-container rounded-[1.5rem] overflow-hidden relative group">
+<img alt="Nail art" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Elegant neutral manicured nails resting on a soft beige silk fabric with natural shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLwrc3XvPPH8XsQldqzR1B_cNtqzlQPtw7rzjHdock80HgrX9L09d-xPeJIoroAnl3s1BWNUQ6XANFLCVtQ2QhDe-pVKU16TNQye_aIbfUbLwiFqFevGW2EM8MuZIuuZrCbQNCVa0h-N83zvq9YxjYmKheBPPN2CpMzgPzRSiXhSNO3_XEdzj1Op10uHdvDvqoiNXaY1lRfg6AZqbxiqcBtn0PkRh8wualE7lWq2cBB2kFLcfYSBDKB2cXnMhs4QExCuzygOq9AMQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline text-xl">Nail Artistry</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Directions/Map Section (Simple) -->
+<section class="py-20 px-6 bg-surface-container-high">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<h2 class="font-headline text-3xl mb-6">Find Your Sanctuary</h2>
+<p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+                        We are located in the heart of Mt Orab, offering a quiet escape from the everyday hustle.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold">231 Apple St</p>
+<p class="text-on-surface-variant">Mt Orab, OH 45154</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<div>
+<p class="font-bold">Operating Hours</p>
+<p class="text-on-surface-variant">Tue - Sat: 9:00 AM - 7:00 PM</p>
+<p class="text-on-surface-variant">Sun - Mon: Closed</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full aspect-video rounded-3xl overflow-hidden shadow-lg border-4 border-surface-container-lowest">
+<img alt="Map location" class="w-full h-full object-cover grayscale" data-alt="Minimalist map graphic showing a stylized street grid with a subtle rose-colored pin." data-location="Mt Orab, Ohio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSZ9nxoIniLNeQFuE_qRt1-yV0hClztVJOpH7lWiLqTmW1OzRPF3cH-zWwCk4RpUNKg9BPdBBXzfRCN2P7cthBgnfozDHg7jlM2vAzunWWJiBAKsVWZmHbPQ2tm0AmjNg2LHXsrJOeuNdoeR20FXd6PorWysw-9K0ScqyzQhpV0O8lOaaHSdKctx7P4z_6GxOzda9u1WJRspNIIPvzmxaCKtEsq_-Fgy8IQoncRNot4CYDPw9CCIgS1lIkM877YlvyoFF1vY7KWBs"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-stone-100 dark:bg-stone-950 text-rose-900 dark:text-rose-200 full-width pt-12 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-serif text-rose-950 dark:text-rose-100">Daye Lily</div>
+<p class="text-stone-500 text-sm leading-relaxed">Redefining boutique beauty through curated experiences and timeless artistry.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 font-headline">Visit Us</h4>
+<p class="text-stone-500 dark:text-stone-400 text-sm mb-2">231 Apple St, Mt Orab, OH</p>
+<p class="text-stone-500 dark:text-stone-400 text-sm">(937) 444-4544</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 font-headline">Explore</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4" href="#">Gift Cards</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4" href="#">Member Rewards</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 font-headline">Policies</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline decoration-rose-200 underline-offset-4" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-stone-200 dark:border-stone-800 text-center md:text-left">
+<p class="text-stone-500 text-xs uppercase tracking-widest">© 2024 Daye Lily Beauty Bar &amp; Boutique</p>
+</div>
+</footer>
+</body></html>

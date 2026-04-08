@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#e8e0ba",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#eae3bc",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#f3dfcb",
+                    "tertiary": "#6a5c4c",
+                    "on-secondary-fixed-variant": "#4b472b",
+                    "secondary": "#635f40",
+                    "surface-tint": "#6d5a5a",
+                    "tertiary-fixed-dim": "#d6c4b0",
+                    "secondary-fixed-dim": "#cec7a2",
+                    "on-primary-container": "#725e5e",
+                    "primary-container": "#f4dada",
+                    "surface-bright": "#fbf9f5",
+                    "surface-variant": "#e4e2de",
+                    "on-secondary-fixed": "#1f1c04",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1b1c1a",
+                    "on-primary-fixed-variant": "#544243",
+                    "surface-dim": "#dbdad6",
+                    "surface-container-highest": "#e4e2de",
+                    "primary": "#6d5a5a",
+                    "primary-fixed-dim": "#dac1c1",
+                    "on-tertiary-fixed-variant": "#514536",
+                    "surface-container": "#efeeea",
+                    "surface": "#fbf9f5",
+                    "inverse-primary": "#dac1c1",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#4e4444",
+                    "on-tertiary-container": "#6e6151",
+                    "on-background": "#1b1c1a",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f5f3ef",
+                    "on-tertiary-fixed": "#231a0e",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#f0ddc9",
+                    "on-secondary-container": "#686344",
+                    "outline": "#807474",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#f7dcdc",
+                    "on-primary-fixed": "#261818",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#d2c3c3",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#fbf9f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .lily-gradient {
+        background: linear-gradient(45deg, #6d5a5a, #f4dada);
+      }
+      .editorial-shadow {
+        box-shadow: 0 12px 32px -4px rgba(27, 28, 26, 0.06);
+      }
+      .glass-header {
+        background: rgba(251, 249, 245, 0.8);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="glass-header fixed top-0 w-full z-50 shadow-sm">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-serif italic text-rose-950 dark:text-rose-100 tracking-tight" href="/">Daye Lily</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-rose-900 dark:text-rose-300 border-b-2 border-rose-200 dark:border-rose-800 pb-1 font-medium hover:text-rose-700 transition-colors duration-300" href="/services">Services</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 transition-colors duration-300" href="/services">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 transition-colors duration-300" href="/about">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-rose-700 transition-colors duration-300" href="/contact">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="hidden lg:block text-stone-600 text-sm font-medium">(937) 444-4544</span>
+<a class="lily-gradient text-on-primary px-6 py-2.5 rounded-lg font-medium hover:scale-95 transition-all duration-200 ease-in-out editorial-shadow inline-block" href="/book-now">
+                    Book Now
+                </a>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-20">
+<div class="relative overflow-hidden rounded-xl h-[400px] flex items-center">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" data-alt="Soft focused interior of a luxury boutique beauty spa with warm sunlight hitting textured stone walls and floral arrangements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpBfkmFfMlbbtSez-IFcg_DAeCLG2XeGC1J54K4CDlOGH3-8ZVALQQ761U7d85Jkq68-TEo3LzLt7aaQZhA5hAERIC63YYH04tG9ae9mo3EVnn4AtVqnqZpuJDWPVc9bmD3lOqzlUDajZEsiIXGWG9ku6wcKwM75cAW-mM--aoYeQBGYKwe4y88vkC8woxgsDOy8TF1zcwKo06qzHfTwYShsgtWitU3vLilcjYj7iMKvxqn0EIZ1ZJ3gxhvX94HDymzrzEfJEoGr0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/90 to-transparent"></div>
+<div class="relative z-10 max-w-2xl pl-12">
+<h1 class="font-headline text-6xl text-on-surface mb-6 leading-tight">Curated <span class="italic">Rituals</span></h1>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-lg">
+                        From hand-painted nail art to advanced clinical skincare, discover a sanctuary where precision meets botanical tranquility.
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="font-label text-xs tracking-widest uppercase text-primary">Service Menu 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Category Navigation (Sticky) -->
+<aside class="lg:col-span-3 hidden lg:block sticky top-32 h-fit space-y-4">
+<h3 class="font-headline text-xl mb-6">Categories</h3>
+<nav class="flex flex-col space-y-2">
+<a class="text-primary font-semibold flex items-center gap-3 py-2 border-l-4 border-primary pl-4 transition-all" href="#nails">
+<span class="material-symbols-outlined text-xl" data-icon="back_hand">back_hand</span> Nails
+                        </a>
+<a class="text-on-surface-variant hover:text-primary flex items-center gap-3 py-2 border-l-4 border-transparent pl-4 transition-all" href="#skincare">
+<span class="material-symbols-outlined text-xl" data-icon="face">face</span> Skincare
+                        </a>
+<a class="text-on-surface-variant hover:text-primary flex items-center gap-3 py-2 border-l-4 border-transparent pl-4 transition-all" href="#lashes">
+<span class="material-symbols-outlined text-xl" data-icon="visibility">visibility</span> Lashes &amp; Brows
+                        </a>
+<a class="text-on-surface-variant hover:text-primary flex items-center gap-3 py-2 border-l-4 border-transparent pl-4 transition-all" href="#body">
+<span class="material-symbols-outlined text-xl" data-icon="spa">spa</span> Body &amp; Tan
+                        </a>
+</nav>
+</aside>
+<!-- Services Content -->
+<div class="lg:col-span-9 space-y-24">
+<!-- Nails Section -->
+<div class="scroll-mt-32" id="nails">
+<div class="flex items-end justify-between mb-8 border-b border-outline-variant/20 pb-4">
+<div>
+<span class="font-label text-xs tracking-widest text-secondary uppercase">The Studio</span>
+<h2 class="font-headline text-4xl mt-1">Nail Artistry</h2>
+</div>
+<span class="font-body text-on-surface-variant italic">Refined elegance for every hand</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Manicure Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform duration-300 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl">Signature Manicure</h4>
+<span class="font-body font-semibold text-primary">starting at $45</span>
+</div>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Includes shaping, cuticle care, buffing, moisturizing massage, and a polish of your choice or high-shine buff.</p>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary/20 text-primary font-semibold hover:bg-primary-container transition-colors">Book This Service</button>
+</div>
+<!-- Pedicure Card -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl">Botanical Pedicure</h4>
+<span class="font-body font-semibold text-primary">starting at $65</span>
+</div>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">A restorative soak with seasonal floral petals, exfoliating scrub, and detailed callus work.</p>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary/20 text-primary font-semibold hover:bg-primary-container transition-colors">Book This Service</button>
+</div>
+<!-- Acrylics Bento -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-3 editorial-shadow">
+<div class="relative h-64 md:h-auto">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" data-alt="Close up of expertly manicured acrylic nails with minimalist sage green abstract art on a soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPwJZ22-kV3yEJVFy5yiCwKYrBN9pyrgB8g87Ebqc4jQOEksMDrQxnKrk0Gs_don2GogT6vVmErC63LWcvPpk9ppWQqreghbOADJzgVscZ_f38dkwXv1W5PPFHPKb8zMyH9teQ7o0C7EUXSNzLkrzMtztVlz0nGyJbX7DB3DH1PJK-jzQCqcIS1ZklYYZBe95_ndclT_KlBCtm-amryb90H-G2PPTThbr_7Nl-z8DgiW5kHGIc88KTDmnAzuXH1qA7dPIz7bAaxp4"/>
+</div>
+<div class="p-8 md:col-span-2 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl text-rose-950">Sculpted Acrylics &amp; Extensions</h4>
+<span class="font-body font-semibold text-primary">$85+</span>
+</div>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Our master technicians specialize in natural-looking extensions and custom shapes including almond, coffin, and stiletto. High-quality EMA monomers only.</p>
+<button class="lily-gradient text-on-primary px-8 py-3 rounded-lg font-medium self-start editorial-shadow hover:scale-95 transition-all">Reserve Consultation</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Skincare Section -->
+<div class="scroll-mt-32" id="skincare">
+<div class="flex items-end justify-between mb-8 border-b border-outline-variant/20 pb-4">
+<div>
+<span class="font-label text-xs tracking-widest text-secondary uppercase">Clinical Beauty</span>
+<h2 class="font-headline text-4xl mt-1">Facial Therapies</h2>
+</div>
+<span class="font-body text-on-surface-variant italic">Reveal your natural radiance</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container p-6 rounded-xl space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="water_drop">water_drop</span>
+<h4 class="font-headline text-xl">Hydrofacial</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Deep cleansing, extraction, and hydration using patented vortex technology.</p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-bold text-primary">$175</span>
+<button class="text-secondary font-bold text-sm hover:underline">Book Now</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="grid_view">grid_view</span>
+<h4 class="font-headline text-xl">Microneedling</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Collagen induction therapy to refine texture, scars, and fine lines.</p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-bold text-primary">$250</span>
+<button class="text-secondary font-bold text-sm hover:underline">Book Now</button>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="font-headline text-xl">The Lily Glow</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">A custom herbal enzyme treatment paired with lymphatic drainage massage.</p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-bold text-primary">$120</span>
+<button class="text-secondary font-bold text-sm hover:underline">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Lashes & Brows Section -->
+<div class="scroll-mt-32" id="lashes">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<div class="mb-8">
+<span class="font-label text-xs tracking-widest text-secondary uppercase">The Frame</span>
+<h2 class="font-headline text-4xl mt-1">Lashes &amp; Brows</h2>
+</div>
+<ul class="space-y-6">
+<li class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<div>
+<h5 class="font-bold">Lash Lift &amp; Tint</h5>
+<p class="text-xs text-on-surface-variant">Natural enhancement lasting 6-8 weeks</p>
+</div>
+<div class="text-right">
+<span class="block font-bold text-primary">$95</span>
+<a class="text-xs text-secondary underline" href="#">Book</a>
+</div>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<div>
+<h5 class="font-bold">Volume Extensions</h5>
+<p class="text-xs text-on-surface-variant">Custom density from natural to dramatic</p>
+</div>
+<div class="text-right">
+<span class="block font-bold text-primary">$180+</span>
+<a class="text-xs text-secondary underline" href="#">Book</a>
+</div>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<div>
+<h5 class="font-bold">Brow Lamination</h5>
+<p class="text-xs text-on-surface-variant">Includes custom shaping and tinting</p>
+</div>
+<div class="text-right">
+<span class="block font-bold text-primary">$85</span>
+<a class="text-xs text-secondary underline" href="#">Book</a>
+</div>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<div>
+<h5 class="font-bold">Piercing (Lobe/Cartilage)</h5>
+<p class="text-xs text-on-surface-variant">Safe, sterile needle method only</p>
+</div>
+<div class="text-right">
+<span class="block font-bold text-primary">$50+</span>
+<a class="text-xs text-secondary underline" href="#">Book</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-6 -left-6 w-24 h-24 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<img alt="" class="rounded-xl editorial-shadow relative z-10 w-full aspect-[4/5] object-cover" data-alt="Macro photography of eyes with long natural-looking lash extensions and perfectly groomed laminated eyebrows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD8oTnpZxEPsU0h8eb8PNEO9G-RqdPelIWhH-s9NbtSxGiBG8VXh0xBTF35PKqHz4lQJcPh60nqV7jpMEkcHkPgPrQfuF2uIiQDrCf-FY4m-7pHKdCjnZr3NcApT9yI8VLxCfDrQxRMYi0MnskuRwPon9JGRfH4hVFKsz8nZ3KUzxZFgZUjx6pzSB5r1U2KIBICmf2Vg718bRO-wdIVEtLOMAginwJMw-Boa5SNs03kbX0Iy3l6-NjYlsrTmakSAp9eM4mZSSOfVQ"/>
+</div>
+</div>
+</div>
+<!-- Body & Tan Section -->
+<div class="scroll-mt-32" id="body">
+<div class="bg-secondary-container/20 rounded-2xl p-12 relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline text-4xl mb-4">The Sunless Glow</h2>
+<p class="text-on-surface-variant mb-8">Professional spray tanning using organic-base solutions for a streak-free, personalized bronze. Choose from Rapid or Original formulas.</p>
+<div class="flex gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-lg flex-1">
+<span class="block font-bold">Signature Tan</span>
+<span class="text-primary font-bold text-xl">$40</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex-1">
+<span class="block font-bold">Elite Rapid</span>
+<span class="text-primary font-bold text-xl">$55</span>
+</div>
+</div>
+<button class="lily-gradient text-on-primary w-full mt-6 py-3 rounded-lg font-medium editorial-shadow">Book A Session</button>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline text-2xl">Body Waxing</h3>
+<div class="grid grid-cols-2 gap-4 text-sm">
+<div class="flex justify-between p-3 border-b border-outline-variant/30"><span>Bikini Full</span> <span>$55</span></div>
+<div class="flex justify-between p-3 border-b border-outline-variant/30"><span>Brazilian</span> <span>$75</span></div>
+<div class="flex justify-between p-3 border-b border-outline-variant/30"><span>Underarms</span> <span>$25</span></div>
+<div class="flex justify-between p-3 border-b border-outline-variant/30"><span>Full Leg</span> <span>$85</span></div>
+</div>
+<p class="text-xs text-stone-500 italic">*Specialized hard wax used for sensitive areas</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 pt-12 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-serif text-rose-950 dark:text-rose-100">Daye Lily</div>
+<p class="text-stone-500 text-sm leading-relaxed">Where modern technique meets boutique charm in the heart of Mt Orab.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-rose-900 font-bold">Visit Us</h4>
+<ul class="space-y-2 text-stone-500 text-sm">
+<li>231 Apple St</li>
+<li>Mt Orab, OH</li>
+<li>(937) 444-4544</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-rose-900 font-bold">Navigation</h4>
+<ul class="space-y-2 text-stone-500 text-sm">
+<li><a class="hover:underline decoration-rose-200 underline-offset-4 transition-opacity" href="#">Services</a></li>
+<li><a class="hover:underline decoration-rose-200 underline-offset-4 transition-opacity" href="#">Gallery</a></li>
+<li><a class="hover:underline decoration-rose-200 underline-offset-4 transition-opacity" href="#">About</a></li>
+<li><a class="hover:underline decoration-rose-200 underline-offset-4 transition-opacity" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-rose-900 font-bold">Legal</h4>
+<ul class="space-y-2 text-stone-500 text-sm">
+<li><a class="hover:underline decoration-rose-200 underline-offset-4 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="hover:underline decoration-rose-200 underline-offset-4 transition-opacity" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-400">
+<span>© 2024 Daye Lily Beauty Bar &amp; Boutique</span>
+<div class="flex gap-6">
+<span class="material-symbols-outlined cursor-pointer hover:text-rose-900" data-icon="camera">camera</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-rose-900" data-icon="share">share</span>
+</div>
+</div>
+</footer>
+</body></html>
